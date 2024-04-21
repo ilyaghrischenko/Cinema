@@ -26,8 +26,6 @@ namespace Cinema.Models
 
             using (CinemaContext db = new())
             {
-                db.Customers.Add(this);
-
                 CinemaInfo.ShowAllSessions();
                 Write("Enter the ID of the session for which you wish to book: ");
                 if (!int.TryParse(ReadLine(), out int sessionId)) throw new Exception("Invalid id input");
@@ -39,6 +37,11 @@ namespace Cinema.Models
                 if (session == null) throw new Exception("Session not found");
                 if (db.Tickets.SingleOrDefault(x => x.SeatNumber == seatNumber && x.Session == session) != null) throw new Exception("This seat for this session is already taken");
 
+                if (db.Customers
+                         .SingleOrDefault(x => x.FirstName == FirstName
+                         && x.LastName == LastName
+                         && x.Email == Email
+                         && x.PhoneNumber == PhoneNumber) == null) db.Customers.Add(this);
                 Ticket ticket = new(session, seatNumber, this, DateTime.Now);
                 db.Tickets.Add(ticket);
 

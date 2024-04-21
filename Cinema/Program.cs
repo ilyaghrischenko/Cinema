@@ -108,6 +108,7 @@ void HandleVisitor()
                 CinemaInfo.ShowAllSessions();
                 break;
             case ConsoleKey.D4:
+                visitor = new();
                 visitor.BookSession();
                 break;
             default:

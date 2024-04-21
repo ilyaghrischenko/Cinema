@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7895F917-6D33-4F5E-9FCC-8634F0902C2F}|Cinema.csproj|c:\\github\\cinema\\cinema\\models\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7895F917-6D33-4F5E-9FCC-8634F0902C2F}|Cinema.csproj|solutionrelative:models\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7895F917-6D33-4F5E-9FCC-8634F0902C2F}|Cinema.csproj|c:\\github\\cinema\\cinema\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7895F917-6D33-4F5E-9FCC-8634F0902C2F}|Cinema.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +28,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\github\\Cinema\\Cinema\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwFYAAAAUAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAtwHEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T11:54:10.003Z",
               "IsPinned": true,
@@ -46,22 +42,9 @@
               "RelativeDocumentMoniker": "Models\\Visitor.cs",
               "ToolTip": "C:\\github\\Cinema\\Cinema\\Models\\Visitor.cs",
               "RelativeToolTip": "Models\\Visitor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwDIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T11:51:10.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\github\\Cinema\\Cinema\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "C:\\github\\Cinema\\Cinema\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowHMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T11:45:29.277Z",
+              "WhenOpened": "2024-04-21T12:09:52.919Z",
               "EditorCaption": ""
             }
           ]
