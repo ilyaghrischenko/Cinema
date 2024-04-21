@@ -42,6 +42,7 @@ namespace Cinema
             {
                 db.Sessions
                      .Include("Movie")
+                     .Include("Hall")
                      .ToList()
                      .ForEach(WriteLine);
             }
