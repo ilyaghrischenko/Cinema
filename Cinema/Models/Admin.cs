@@ -1,27 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Query;
-using static System.Console;
+﻿using static System.Console;
 
 namespace Cinema.Models
 {
-    public class Employee
+    public static class Admin
     {
-        //public string FirstName { get; set; } = "NoFirstName";
-        //public string LastName { get; set; } = "NoLastName";
-        //public uint Age { get; set; } = 0;
-        //public string Email { get; set; } = "NoEmail";
-        //public string PhoneNumber { get; set; } = "NoPhoneNumber";
-
-        public Employee() { }
-        //public Employee(string firstName, string lastName, uint age, string email, string phoneNumber)
-        //{
-        //    FirstName = firstName;
-        //    LastName = lastName;
-        //    Age = age;
-        //    Email = email;
-        //    PhoneNumber = phoneNumber;
-        //}
-
-        public void RemoveCustomer()
+        public static void RemoveCustomer()
         {
             CinemaInfo.ShowAllCustomers();
             Write("Enter the id of the customer you want to remove: ");
@@ -40,7 +23,7 @@ namespace Cinema.Models
             }
             WriteLine("You have successfully removed the customer");
         }
-        public void RemoveHall()
+        public static void RemoveHall()
         {
             CinemaInfo.ShowAllHalls();
             Write("Enter the id of the hall you want to remove: ");
@@ -59,7 +42,7 @@ namespace Cinema.Models
             }
             WriteLine("You have successfully removed the hall");
         }
-        public void RemoveMovie()
+        public static void RemoveMovie()
         {
             CinemaInfo.ShowAllMovies();
             Write("Enter the id of the movie you want to remove: ");
@@ -78,7 +61,7 @@ namespace Cinema.Models
             }
             WriteLine("You have successfully removed the movie");
         }
-        public void RemoveSession()
+        public static void RemoveSession()
         {
             CinemaInfo.ShowAllSessions();
             Write("Enter the id of the session you want to remove: ");
@@ -97,7 +80,7 @@ namespace Cinema.Models
             }
             WriteLine("You have successfully removed the session");
         }
-        public void RemoveTicket()
+        public static void RemoveTicket()
         {
             CinemaInfo.ShowAllTickets();
             Write("Enter the id of the ticket you want to remove: ");
@@ -113,7 +96,7 @@ namespace Cinema.Models
             WriteLine("You have successfully removed the ticket");
         }
 
-        public void AddHall()
+        public static void AddHall()
         {
             using (CinemaContext db = new())
             {
@@ -131,7 +114,7 @@ namespace Cinema.Models
                 WriteLine("You have successfully added a new hall");
             }
         }
-        public void AddMovie()
+        public static void AddMovie()
         {
             using (CinemaContext db = new())
             {
@@ -154,7 +137,7 @@ namespace Cinema.Models
                 WriteLine("You have successfully added a new movie");
             }
         }
-        public void AddSession()
+        public static void AddSession()
         {
             using (CinemaContext db = new())
             {

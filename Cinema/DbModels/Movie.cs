@@ -1,6 +1,4 @@
-﻿using static System.Console;
-
-namespace Cinema.Models
+﻿namespace Cinema.Models
 {
     public class Movie
     {
