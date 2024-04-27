@@ -1,0 +1,15 @@
+C:\github\Cinema\DataBase\bin\Debug\net8.0\DataBase.deps.json
+C:\github\Cinema\DataBase\bin\Debug\net8.0\DataBase.runtimeconfig.json
+C:\github\Cinema\DataBase\bin\Debug\net8.0\DataBase.dll
+C:\github\Cinema\DataBase\bin\Debug\net8.0\DataBase.pdb
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.csproj.AssemblyReference.cache
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.AssemblyInfoInputs.cache
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.AssemblyInfo.cs
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.csproj.CoreCompileInputs.cache
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.sourcelink.json
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.dll
+C:\github\Cinema\DataBase\obj\Debug\net8.0\refint\DataBase.dll
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.pdb
+C:\github\Cinema\DataBase\obj\Debug\net8.0\DataBase.genruntimeconfig.cache
+C:\github\Cinema\DataBase\obj\Debug\net8.0\ref\DataBase.dll
