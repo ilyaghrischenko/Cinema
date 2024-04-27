@@ -62,7 +62,7 @@ namespace DataBase
             }
         }
 
-        public static async Task<List<Customer>?> GetCustomersAsync()
+        public static async Task<List<Customer>> GetCustomersAsync()
         {
             try
             {
@@ -74,10 +74,10 @@ namespace DataBase
             catch (Exception ex)
             {
                 await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
-                return null;
+                return new();
             }
         }
-        public static async Task<List<Hall>?> GetHallsAsync()
+        public static async Task<List<Hall>> GetHallsAsync()
         {
             try
             {
@@ -89,10 +89,10 @@ namespace DataBase
             catch (Exception ex)
             {
                 await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
-                return null;
+                return new();
             }
         }
-        public static async Task<List<Movie>?> GetMoviesAsync()
+        public static async Task<List<Movie>> GetMoviesAsync()
         {
             try
             {
@@ -104,10 +104,10 @@ namespace DataBase
             catch (Exception ex)
             {
                 await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
-                return null;
+                return new();
             }
         }
-        public static async Task<List<Session>?> GetSessionsAsync()
+        public static async Task<List<Session>> GetSessionsAsync()
         {
             try
             {
@@ -119,10 +119,10 @@ namespace DataBase
             catch (Exception ex)
             {
                 await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
-                return null;
+                return new();
             }
         }
-        public static async Task<List<Ticket>?> GetTicketsAsync()
+        public static async Task<List<Ticket>> GetTicketsAsync()
         {
             try
             {
@@ -134,7 +134,7 @@ namespace DataBase
             catch (Exception ex)
             {
                 await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
-                return null;
+                return new();
             }
         }
     }

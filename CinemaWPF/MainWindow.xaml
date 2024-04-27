@@ -95,10 +95,18 @@
                                  x:Name="PhoneNumberInput"/>
                     </Grid>
 
-                    <Button Grid.Row="9"
-                            Content="Log in as User"
-                            x:Name="UserLogInButton"
-                            Click="UserLogIn"/>
+                    <Grid Grid.Row="9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="1"
+                                Content="Log in as User"
+                                x:Name="UserLogInButton"
+                                Click="UserLogIn"/>
+                    </Grid>
                 </Grid>
 
                 <Grid Grid.Column="3" Background="BlanchedAlmond">
@@ -135,10 +143,18 @@
                                  x:Name="PasswordInput"/>
                     </Grid>
 
-                    <Button Grid.Row="5"
-                            Content="Log in as Admin"
-                            x:Name="AdminLogInButton"
-                            Click="AdminLogIn"/>
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="3.2*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Button Grid.Column="1"
+                                Content="Log in as Admin"
+                                x:Name="AdminLogInButton"
+                                Click="AdminLogIn"/>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

@@ -1,1 +1,0 @@
-{"TimePoint":"2024-04-27T12:31:01.2956749+03:00","ErrorMessage":"No movies found","StackTrace":"   at CinemaWPF.MainWindow.Button_Click(Object sender, RoutedEventArgs e) in C:\\github\\Cinema\\CinemaWPF\\MainWindow.xaml.cs:line 22"}
