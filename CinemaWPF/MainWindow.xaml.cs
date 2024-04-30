@@ -1,5 +1,7 @@
 ﻿using DataBase;
 using DataBase.DbModels;
+using System.IO;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -25,24 +27,17 @@ namespace CinemaWPF
                 return;
             }
 
-            UserWindow userWindow = new(new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text));
+            Customer customer = new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text);
+            UserWindow userWindow = new(customer);
             Close();
             userWindow.ShowDialog();
         }
         private async void AdminLogIn(object sender, RoutedEventArgs e)
         {
             AdminLogInButton.IsEnabled = false;
-            if (string.IsNullOrEmpty(LoginInput.Text)
-                || string.IsNullOrEmpty(PasswordInput.Text))
-            {
-                MessageBox.Show("You have not filled all fields");
-                AdminLogInButton.IsEnabled = true;
-                return;
-            }
-
-            //var adminWindow = new AdminWindow();
-            //Close();
-            //adminWindow.ShowDialog();
+            AdminLogInWindow adminLogInWindow = new();
+            Close();
+            adminLogInWindow.ShowDialog();
         }
     }
 }

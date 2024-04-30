@@ -71,3 +71,7 @@ C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\CinemaWPF.genruntimeconfig.c
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\ref\CinemaWPF.dll
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\UserWindow.g.cs
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\UserWindow.baml
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\AdminLogInWindow.g.cs
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\AdminLogInWindow.baml
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\AdminWindow.g.cs
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\AdminWindow.baml

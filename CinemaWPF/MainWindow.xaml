@@ -5,52 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="400">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1.5*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="1.5*"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0" Background="Gray"/>
-        <Grid Grid.Column="2" Background="Gray"/>
-
-        <Grid Grid.Column="1">
+        <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0" Background="BlueViolet"/>
-            <Grid Grid.Row="2" Background="BlueViolet"/>
+            <TextBlock Grid.Row="0"
+                       Text="Welcome!"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
 
-            <Grid Grid.Row="1" Background="SaddleBrown">
+            <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-                <Grid Grid.Column="1" Background="BlanchedAlmond">
+                <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition Height="1*"/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
 
-                    <Grid Grid.Row="1" Background="Khaki">
+                    <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -61,7 +57,8 @@
                         <TextBox Grid.Row="1"
                                  x:Name="FirstNameInput"/>
                     </Grid>
-                    <Grid Grid.Row="3" Background="Khaki">
+
+                    <Grid Grid.Row="3">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -72,7 +69,8 @@
                         <TextBox Grid.Row="1"
                                  x:Name="LastNameInput"/>
                     </Grid>
-                    <Grid Grid.Row="5" Background="Khaki">
+
+                    <Grid Grid.Row="5">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -83,7 +81,8 @@
                         <TextBox Grid.Row="1"
                                  x:Name="EmailInput"/>
                     </Grid>
-                    <Grid Grid.Row="7" Background="Khaki">
+
+                    <Grid Grid.Row="7">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -97,63 +96,22 @@
 
                     <Grid Grid.Row="9">
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
                             <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2.5*"/>
-                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
                         <Button Grid.Column="1"
                                 Content="Log in as User"
                                 x:Name="UserLogInButton"
                                 Click="UserLogIn"/>
-                    </Grid>
-                </Grid>
 
-                <Grid Grid.Column="3" Background="BlanchedAlmond">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="1.8*"/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="1.8*"/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition Height="1.8*"/>
-                        <RowDefinition Height="2*"/>
-                    </Grid.RowDefinitions>
-
-                    <Grid Grid.Row="1" Background="Khaki">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Login:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="LoginInput"/>
-                    </Grid>
-                    <Grid Grid.Row="3" Background="Khaki">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                       Text="Password:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="PasswordInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="5">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="3.2*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-                        
-                        <Button Grid.Column="1"
-                                Content="Log in as Admin"
+                        <Button Grid.Column="2"
+                                Content="Admin"
                                 x:Name="AdminLogInButton"
-                                Click="AdminLogIn"/>
+                                Click="AdminLogIn"
+                                Height="30"
+                                Width="45"/>
                     </Grid>
                 </Grid>
             </Grid>
