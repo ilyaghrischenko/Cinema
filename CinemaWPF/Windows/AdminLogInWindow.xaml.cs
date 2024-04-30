@@ -30,7 +30,9 @@ namespace CinemaWPF
             {
                 if (!await admin.Check())
                 {
-                    MessageBox.Show("Incorrect data");
+                    MessageBox.Show("Admin with this data does not exist");
+                    LoginInput.Clear();
+                    PasswordInput.Clear();
                     AdminLogInButton.IsEnabled = true;
                     return;
                 }
@@ -42,6 +44,7 @@ namespace CinemaWPF
                 Close();
             }
 
+            MessageBox.Show("You have successfully logged in");
             AdminWindow adminWindow = new();
             Close();
             adminWindow.ShowDialog();

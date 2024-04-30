@@ -27,7 +27,21 @@ namespace CinemaWPF
                 return;
             }
 
-            Customer customer = new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text);
+            Customer? customer = null;
+            using CinemaContext db = new();
+            var findedCustomer = db.Customers.SingleOrDefault(x => x.FirstName == FirstNameInput.Text && x.LastName == LastNameInput.Text && x.Email == EmailInput.Text && x.PhoneNumber == PhoneNumberInput.Text);
+            if (findedCustomer == null)
+            {
+                customer = new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text);
+                db.Customers.Add(customer);
+                db.SaveChanges();
+                MessageBox.Show("You have successfully registered");
+            }
+            else
+            {
+                customer = findedCustomer;
+                MessageBox.Show("You have successfully logged in");
+            }
             UserWindow userWindow = new(customer);
             Close();
             userWindow.ShowDialog();

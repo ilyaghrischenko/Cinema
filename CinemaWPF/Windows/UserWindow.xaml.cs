@@ -17,36 +17,11 @@ namespace CinemaWPF
         {
             InitializeComponent();
             Customer = customer;
-            InitializeAsync();
+            GetSessionsAsync();
         }
 
-        private async void InitializeAsync()
-        {
-            var customers = await CinemaInfo.GetCustomersAsync();
-            if (customers.Count == 0)
-            {
-                AddCustomer();
-            }
-            else
-            {
-                var findedCustomer = customers.SingleOrDefault(x => x.Equals(Customer));
-                if (findedCustomer == null) AddCustomer();
-                else Customer = findedCustomer;
-            }
-
-            var sessions = await CinemaInfo.GetSessionsAsync();
-            var text = "";
-            sessions.ForEach(x => text += $"{x}\n");
-            SessionsList.Text = text;
-        }
-        private void AddCustomer()
-        {
-            using (CinemaContext db = new())
-            {
-                db.Customers.Add(Customer);
-                db.SaveChanges();
-            }
-        }
+        private async void GetSessionsAsync()
+        => SessionsList.ItemsSource = await CinemaInfo.GetSessionsAsync();
 
         private async void TicketBuy(object sender, RoutedEventArgs e)
         {
@@ -67,46 +42,70 @@ namespace CinemaWPF
             if (movie == null)
             {
                 MessageBox.Show("Movie with this name does not exist");
+                MovieInput.Clear();
                 TicketButton.IsEnabled = true;
                 return;
             }
 
             var halls = await CinemaInfo.GetHallsAsync();
-            var hallNumber = uint.Parse(HallInput.Text);
+            if (!uint.TryParse(HallInput.Text, out uint hallNumber))
+            {
+                MessageBox.Show("Invalid hall number input");
+                HallInput.Clear();
+                TicketButton.IsEnabled = true;
+                return;
+            }
             var hall = halls.SingleOrDefault(x => x.Number == hallNumber);
             if (hall == null)
             {
                 MessageBox.Show("Hall with this number does not exist");
+                HallInput.Clear();
                 TicketButton.IsEnabled = true;
                 return;
             }
 
             var sessions = await CinemaInfo.GetSessionsAsync();
-            var startTime = DateTime.Parse(StartTimeInput.Text);
+            if (!DateTime.TryParse(StartTimeInput.Text, out DateTime startTime))
+            {
+                MessageBox.Show("Invalid start time input");
+                StartTimeInput.Clear();
+                TicketButton.IsEnabled = true;
+                return;
+            }
             var session = sessions.SingleOrDefault(x => x.StartTime == startTime && x.Movie.Equals(movie) && x.Hall.Equals(hall));
             if (session == null)
             {
                 MessageBox.Show("Session with this movie, hall and start time does not exist");
+                MovieInput.Clear();
+                HallInput.Clear();
+                StartTimeInput.Clear();
+                SeatNumberInput.Clear();
                 TicketButton.IsEnabled = true;
                 return;
             }
 
             var tickets = await CinemaInfo.GetTicketsAsync();
-            var seatNumber = uint.Parse(SeatNumberInput.Text);
+            if (!uint.TryParse(SeatNumberInput.Text, out uint seatNumber))
+            {
+                MessageBox.Show("Invalid seat number input");
+                SeatNumberInput.Clear();
+                TicketButton.IsEnabled = true;
+                return;
+            }
             var ticket = tickets.SingleOrDefault(x => x.SeatNumber == seatNumber && x.Session.Equals(session));
             if (ticket != null)
             {
                 MessageBox.Show("Ticket with this seat number on this session already exist");
+                SeatNumberInput.Clear();
                 TicketButton.IsEnabled = true;
                 return;
             }
 
-            Ticket newTicket = new(session, seatNumber, Customer, DateTime.Now);
-            using (CinemaContext db = new())
-            {
-                db.Tickets.Add(newTicket);
-                db.SaveChanges();
-            }
+            using CinemaContext db = new();
+            Ticket newTicket = new(db.Sessions.First(x => x.Equals(session)), seatNumber, db.Customers.First(x => x.Equals(Customer)), DateTime.Now);
+            db.Tickets.Add(newTicket);
+            db.SaveChanges();
+
             MessageBox.Show("You have successfully purchased a ticket");
             TicketButton.IsEnabled = true;
         }
