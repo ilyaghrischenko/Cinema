@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\github\\Cinema\\CinemaWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|c:\\github\\cinema\\cinemawpf\\windows\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|solutionrelative:windows\\userwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|c:\\github\\cinema\\cinemawpf\\windows\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|solutionrelative:windows\\userwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|c:\\github\\cinema\\cinemawpf\\windows\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|solutionrelative:windows\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserWindow.xaml.cs",
-              "DocumentMoniker": "C:\\github\\Cinema\\CinemaWPF\\Windows\\UserWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Windows\\UserWindow.xaml.cs",
-              "ToolTip": "C:\\github\\Cinema\\CinemaWPF\\Windows\\UserWindow.xaml.cs",
-              "RelativeToolTip": "Windows\\UserWindow.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBUAAAAAAAAA",
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\github\\Cinema\\CinemaWPF\\Windows\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Windows\\AdminWindow.xaml.cs",
+              "ToolTip": "C:\\github\\Cinema\\CinemaWPF\\Windows\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "Windows\\AdminWindow.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAA7wD8AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:00:46.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserWindow.xaml",
-              "DocumentMoniker": "C:\\github\\Cinema\\CinemaWPF\\Windows\\UserWindow.xaml",
-              "RelativeDocumentMoniker": "Windows\\UserWindow.xaml",
-              "ToolTip": "C:\\github\\Cinema\\CinemaWPF\\Windows\\UserWindow.xaml",
-              "RelativeToolTip": "Windows\\UserWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-30T13:00:45.521Z",
+              "WhenOpened": "2024-05-01T16:04:36.507Z",
               "EditorCaption": ""
             }
           ]

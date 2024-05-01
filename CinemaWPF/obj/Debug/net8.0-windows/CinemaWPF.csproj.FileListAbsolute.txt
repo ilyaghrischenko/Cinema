@@ -75,3 +75,7 @@ C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\UserWindow.g.cs
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AdminLogInWindow.baml
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AdminWindow.baml
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\UserWindow.baml
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AddHallWindow.g.cs
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AddHallWindow.baml
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AddMovieWindow.g.cs
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\AddMovieWindow.baml

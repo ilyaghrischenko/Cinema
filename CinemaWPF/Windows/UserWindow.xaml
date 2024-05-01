@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="UserWindow" Height="450" Width="600">
+        Title="UserWindow" Height="400" Width="500">
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="6*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
        
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1.5*"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -35,17 +35,11 @@
 
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition/>
-                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1.5*"/>
                         <RowDefinition/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition/>
-                        <RowDefinition Height="2*"/>
-                        <RowDefinition/>
+                        <RowDefinition Height="1.5*"/>
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="1">
@@ -55,51 +49,16 @@
                         </Grid.RowDefinitions>
 
                         <TextBlock Grid.Row="0"
-                                   Text="Movie:"/>
+                                   Text="Seat number:"/>
                         <TextBox Grid.Row="1"
-                                 x:Name="MovieInput"/>
+                                 x:Name="SeatNumberInput"
+                                 TextChanged="TextChanged"/>
                     </Grid>
 
                     <Grid Grid.Row="3">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Hall:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="HallInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Start time:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="StartTimeInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="7">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Seat number:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="SeatNumberInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="9">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="1.7*"/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
