@@ -23,6 +23,7 @@ namespace CinemaWPF
                 return;
             }
 
+            var movies = await CinemaInfo.GetMoviesAsync();
             string title = TitleInput.Text;
             string director = DirectorInput.Text;
             string genre = GenreInput.Text;
@@ -39,7 +40,6 @@ namespace CinemaWPF
                 return;
             }
 
-            var movies = await CinemaInfo.GetMoviesAsync();
             Movie newMovie = new(title, director, genre, duration, releaseDate);
             var findedMovie = movies.SingleOrDefault(x => x.Equals(newMovie));
             if (findedMovie != null)

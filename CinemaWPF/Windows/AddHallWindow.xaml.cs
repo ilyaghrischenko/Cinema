@@ -34,6 +34,13 @@ namespace CinemaWPF
             }
 
             var halls = await CinemaInfo.GetHallsAsync();
+            if (halls.SingleOrDefault(x => x.Number == number) != null)
+            {
+                MessageBox.Show("Hall with this number already exist");
+                NumberInput.Clear();
+                return;
+            }
+
             Hall newHall = new(number, capacity);
             var findedHall = halls.SingleOrDefault(x => x.Equals(newHall));
             if (findedHall != null)

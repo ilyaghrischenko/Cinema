@@ -19,6 +19,7 @@ namespace CinemaWPF
 
         private async void ShowCustomers(object sender, RoutedEventArgs e)
         {
+            AddButton.IsEnabled = false;
             LastButtonClicked?.ClearValue(BackgroundProperty);
             LastButtonClicked = ShowCustomersButton;
             LastButtonClicked.Background = System.Windows.Media.Brushes.Gold;
@@ -50,6 +51,7 @@ namespace CinemaWPF
         }
         private async void ShowTickets(object sender, RoutedEventArgs e)
         {
+            AddButton.IsEnabled = false;
             LastButtonClicked?.ClearValue(BackgroundProperty);
             LastButtonClicked = ShowTicketsButton;
             LastButtonClicked.Background = System.Windows.Media.Brushes.Gold;
@@ -61,7 +63,7 @@ namespace CinemaWPF
             Window? window = null;
             if (LastButtonClicked == ShowHallsButton) window = new AddHallWindow();
             else if (LastButtonClicked == ShowMoviesButton) window = new AddMovieWindow();
-            //else if (LastButtonClicked == ShowSessionsButton) window = new AddSessionWindow();
+            else if (LastButtonClicked == ShowSessionsButton) window = new AddSessionWindow();
             window?.ShowDialog();
         }
         private async void Remove(object sender, RoutedEventArgs e)
