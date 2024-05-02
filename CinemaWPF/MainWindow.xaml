@@ -13,7 +13,7 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Background="SkyBlue">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="6*"/>

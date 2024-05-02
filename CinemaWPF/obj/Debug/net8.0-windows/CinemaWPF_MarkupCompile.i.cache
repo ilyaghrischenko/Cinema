@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\github\Cinema\CinemaWPF\App.xaml
-7-1362528279
+7-278190978
 
-131646392274
+13-384776936
 239447569060
-MainWindow.xaml;Windows\AddHallWindow.xaml;Windows\AddMovieWindow.xaml;Windows\AddSessionWindow.xaml;Windows\AdminLogInWindow.xaml;Windows\AdminWindow.xaml;Windows\UserWindow.xaml;
+MainWindow.xaml;Windows\Admin\AddHallWindow.xaml;Windows\Admin\AddMovieWindow.xaml;Windows\Admin\AddSessionWindow.xaml;Windows\Admin\AdminLogInWindow.xaml;Windows\Admin\AdminWindow.xaml;Windows\User\UserWindow.xaml;
 
-True
+False
 

@@ -7,27 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Windows\AddSessionWindow.xaml.cs">
+    <Compile Update="Windows\Admin\AddSessionWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\AddMovieWindow.xaml.cs">
+    <Compile Update="Windows\Admin\AddMovieWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\AddHallWindow.xaml.cs">
+    <Compile Update="Windows\Admin\AddHallWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Windows\AddSessionWindow.xaml">
+    <Page Update="Windows\Admin\AddSessionWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\AddMovieWindow.xaml">
+    <Page Update="Windows\Admin\AddMovieWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\AddHallWindow.xaml">
+    <Page Update="Windows\Admin\AddHallWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

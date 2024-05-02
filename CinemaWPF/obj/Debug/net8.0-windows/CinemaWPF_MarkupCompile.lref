@@ -1,10 +1,10 @@
 ﻿
 
 FC:\github\Cinema\CinemaWPF\MainWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\AdminLogInWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\AdminWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\UserWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\AddHallWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\AddMovieWindow.xaml;;
-FC:\github\Cinema\CinemaWPF\Windows\AddSessionWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\Admin\AddHallWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\Admin\AddMovieWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\Admin\AddSessionWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\Admin\AdminLogInWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\Admin\AdminWindow.xaml;;
+FC:\github\Cinema\CinemaWPF\Windows\User\UserWindow.xaml;;
 
