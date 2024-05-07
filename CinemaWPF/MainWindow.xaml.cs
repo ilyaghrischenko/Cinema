@@ -1,9 +1,6 @@
 ﻿using DataBase;
 using DataBase.DbModels;
-using System.IO;
-using System.Text.Json;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace CinemaWPF
 {
@@ -32,7 +29,18 @@ namespace CinemaWPF
             var findedCustomer = db.Customers.SingleOrDefault(x => x.FirstName == FirstNameInput.Text && x.LastName == LastNameInput.Text && x.Email == EmailInput.Text && x.PhoneNumber == PhoneNumberInput.Text);
             if (findedCustomer == null)
             {
-                customer = new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text);
+                try
+                {
+                    customer = new(FirstNameInput.Text, LastNameInput.Text, EmailInput.Text, PhoneNumberInput.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    if (ex.Message.Contains("phone number")) PhoneNumberInput.Clear();
+                    else if (ex.Message.Contains("email")) EmailInput.Clear();
+                    UserLogInButton.IsEnabled = true;
+                    return;
+                }
                 db.Customers.Add(customer);
                 db.SaveChanges();
                 MessageBox.Show("You have successfully registered");

@@ -1,1 +1,2 @@
 # Cinema
+Coursework on the discipline “Database Organization”. This is a movie theater, where you can log in as a user, who can select the desired session, and select a seat, and then just buy a ticket. Or you can log in as an admin to edit data (add or delete: movie, hall, session, etc.). The project uses WPF, C#, SQL, EntityFrameworkCore.

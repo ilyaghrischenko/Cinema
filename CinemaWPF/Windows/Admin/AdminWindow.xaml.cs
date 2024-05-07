@@ -1,9 +1,7 @@
 ﻿using DataBase;
 using DataBase.DbModels;
-using System.Drawing;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Forms.VisualStyles;
 
 namespace CinemaWPF
 {

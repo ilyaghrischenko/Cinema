@@ -1,8 +1,6 @@
 ﻿using DataBase;
-using DataBase.DbModels;
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace CinemaWPF
 {
@@ -37,9 +35,8 @@ namespace CinemaWPF
                     return;
                 }
             }
-            catch (FileNotFoundException ex)
+            catch (FileNotFoundException)
             {
-                await ErrorLoger.LogErrorAsync("errors.json", ex);
                 MessageBox.Show("Data not found");
                 Close();
             }

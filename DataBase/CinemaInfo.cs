@@ -71,9 +71,8 @@ namespace DataBase
                     return await db.Customers.ToListAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
                 return new();
             }
         }
@@ -86,9 +85,8 @@ namespace DataBase
                     return await db.Halls.ToListAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
                 return new();
             }
         }
@@ -101,9 +99,8 @@ namespace DataBase
                     return await db.Movies.ToListAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
                 return new();
             }
         }
@@ -116,9 +113,8 @@ namespace DataBase
                     return await db.Sessions.Include("Movie").Include("Hall").ToListAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
                 return new();
             }
         }
@@ -131,9 +127,8 @@ namespace DataBase
                     return await db.Tickets.Include("Session").Include("Session.Hall").Include("Session.Movie").Include("Customer").ToListAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                await ErrorLoger.LogErrorAsync("dbErrors.json", ex);
                 return new();
             }
         }
