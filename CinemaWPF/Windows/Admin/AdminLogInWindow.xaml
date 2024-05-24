@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="AdminLogInWindow" Height="600" Width="400">
+        Title="Admin Log in" Height="600" Width="400"
+        MaxHeight="600" MinHeight="600"
+        MaxWidth="400" MinWidth="400"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>

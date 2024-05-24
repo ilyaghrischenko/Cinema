@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="UserWindow" Height="400" Width="500">
+        Title="Ticket buy" Height="400" Width="500"
+        MaxHeight="400" MinHeight="400"
+        MaxWidth="500" MinWidth="500"
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>

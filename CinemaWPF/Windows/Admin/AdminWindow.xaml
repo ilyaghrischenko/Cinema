@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="500" Width="600">
+        Title="Manage" Height="500" Width="600"
+        MaxHeight="500" MinHeight="500"
+        MaxWidth="600" MinWidth="600"
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>

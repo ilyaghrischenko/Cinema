@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="AddSessionWindow" Height="500" Width="700">
+        Title="Add Session" Height="500" Width="700"
+        MaxHeight="500" MinHeight="500"
+        MaxWidth="700" MinWidth="700"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

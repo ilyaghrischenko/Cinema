@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="AddMovieWindow" Height="600" Width="300">
+        Title="Add Movie" Height="600" Width="300"
+        MaxHeight="600" MinHeight="600"
+        MaxWidth="300" MinWidth="300"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>

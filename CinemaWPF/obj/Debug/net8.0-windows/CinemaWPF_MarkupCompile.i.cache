@@ -16,5 +16,5 @@ C:\github\Cinema\CinemaWPF\App.xaml
 239447569060
 MainWindow.xaml;Windows\Admin\AddHallWindow.xaml;Windows\Admin\AddMovieWindow.xaml;Windows\Admin\AddSessionWindow.xaml;Windows\Admin\AdminLogInWindow.xaml;Windows\Admin\AdminWindow.xaml;Windows\User\UserWindow.xaml;
 
-False
+True
 
