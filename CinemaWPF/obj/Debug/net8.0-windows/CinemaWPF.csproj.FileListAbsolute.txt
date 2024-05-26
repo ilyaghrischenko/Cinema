@@ -81,3 +81,5 @@ C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\Admin\AddSessionWind
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\Admin\AdminLogInWindow.baml
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\Admin\AdminWindow.baml
 C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\User\UserWindow.baml
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\User\UserRegistrationWindow.g.cs
+C:\github\Cinema\CinemaWPF\obj\Debug\net8.0-windows\Windows\User\UserRegistrationWindow.baml

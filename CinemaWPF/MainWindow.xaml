@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CinemaWPF"
         mc:Ignorable="d"
-        Title="Log in" Height="600" Width="400"
-        MaxHeight="600" MinHeight="600"
-        MaxWidth="400" MinWidth="400"
+        Title="Log in" Height="400" Width="350"
+        MaxHeight="400" MinHeight="400"
+        MaxWidth="350" MinWidth="350"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
@@ -36,68 +36,35 @@
 
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1.5*"/>
-                        <RowDefinition Height="1*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <Grid Grid.Row="1">
+                    <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Row="0"
-                                   Text="First name:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="FirstNameInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="3">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Last name:"/>
-                        <TextBox Grid.Row="1"
-                                 x:Name="LastNameInput"/>
-                    </Grid>
-
-                    <Grid Grid.Row="5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Email:"/>
+                        <TextBlock Text="Email:"/>
                         <TextBox Grid.Row="1"
                                  x:Name="EmailInput"/>
                     </Grid>
 
-                    <Grid Grid.Row="7">
+                    <Grid Grid.Row="2">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-
-                        <TextBlock Grid.Row="0"
-                                   Text="Phone number:"/>
+                        <TextBlock Text="Phone number:"/>
                         <TextBox Grid.Row="1"
                                  x:Name="PhoneNumberInput"/>
                     </Grid>
 
-                    <Grid Grid.Row="9">
+                    <Grid Grid.Row="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
                             <ColumnDefinition Width="1*"/>
@@ -118,6 +85,26 @@
                     </Grid>
                 </Grid>
             </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="1"
+                    Grid.Row="1"
+                    Content="Registration"
+                    x:Name="RegistrationButton"
+                    Click="RegistrationButton_Click"
+                    BorderBrush="Blue"/>
         </Grid>
     </Grid>
 </Window>
