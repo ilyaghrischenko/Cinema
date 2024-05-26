@@ -1,51 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\github\\Cinema\\CinemaWPF\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3F53ACF9-042B-430A-9601-58572606C318}|..\\DataBase\\DataBase.csproj|c:\\github\\cinema\\database\\dbmodels\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|c:\\github\\cinema\\cinemawpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{81F4B9FD-A9BB-472E-BEE3-A2BAC4BEE7BC}|CinemaWPF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 139,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\github\\Cinema\\DataBase\\DbModels\\Ticket.cs",
-              "RelativeDocumentMoniker": "..\\DataBase\\DbModels\\Ticket.cs",
-              "ToolTip": "C:\\github\\Cinema\\DataBase\\DbModels\\Ticket.cs",
-              "RelativeToolTip": "..\\DataBase\\DbModels\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T13:31:14.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\github\\Cinema\\CinemaWPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\github\\Cinema\\CinemaWPF\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-21T11:24:29.043Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
